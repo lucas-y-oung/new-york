@@ -1297,23 +1297,34 @@
     ].map(([name, category, area, address, lat, lng, budget, reason, reserve, image]) => ({ name, category, area, address, lat, lng, budget, reason, reserve, image }));
 
     const sights = [
-      ["华尔街轴线", "下城区", "人文景观", "New_York_Stock_Exchange_Building", 40.7069, -74.0113, "免费，现场前往", "Charging Bull、NYSE 外观、Federal Hall 和 Trinity Church 可串成金融区步行线。", "https://www.nps.gov/feha/index.htm"],
-      ["9/11 Memorial & The Oculus", "下城区", "人文景观", "National_September_11_Memorial_&_Museum", 40.7115, -74.0134, "纪念池免费；博物馆需购票", "纪念池适合安静停留，Oculus 建筑感强。", "https://www.911memorial.org/visit"],
-      ["SoHo · Washington Square Park · NYU", "下城区", "休闲娱乐", "Washington_Square_Park", 40.7308, -73.9973, "免费，现场前往", "逛街、咖啡、校园和街区氛围自然衔接。", "https://www.nycgovparks.org/parks/washington-square-park"],
-      ["Statue of Liberty & Ellis Island", "下城区", "人文景观", "Statue_of_Liberty", 40.6892, -74.0445, "必须购买官方渡轮票", "自由女神岛和埃利斯岛是纽约移民史核心组合。", "https://www.cityexperiences.com/new-york/city-cruises/statue/"],
-      ["Hudson River Park", "下城区", "自然景观", "Hudson_River_Park", 40.7325, -74.0104, "免费，现场前往", "适合傍晚沿河散步，看夕阳和新泽西方向天际线。", "https://hudsonriverpark.org/"],
-      ["Whitney Museum · Little Island · High Line", "中城区", "人文景观", "Whitney_Museum_of_American_Art", 40.7396, -74.0089, "Whitney 建议购票；其余免费", "中城西侧艺术、公园和高架步道路线。", "https://whitney.org/visit"],
-      ["Hudson Yards · Vessel · The Shed", "中城区", "休闲娱乐", "Vessel_(structure)", 40.7536, -74.0020, "视官网政策", "High Line 北端收尾，适合接 The Edge 或 Mercado Little Spain。", "https://www.hudsonyardsnewyork.com/discover/vessel"],
-      ["Roosevelt Island Tram", "中城区", "休闲娱乐", "Roosevelt_Island_Tramway", 40.7614, -73.9640, "刷 OMNY/MetroCard", "短时间获得东河缆车视角。", "https://rioc.ny.gov/302/Tram"],
-      ["Bryant Park · NYPL · Grand Central", "中城区", "人文景观", "New_York_Public_Library_Main_Branch", 40.7527, -73.9772, "多数免费", "中城东经典三连，适合半天步行。", "https://www.nypl.org/locations/schwarzman"],
-      ["St. Patrick's Cathedral · Fifth Avenue · Rockefeller Center", "中城区", "人文景观", "St._Patrick's_Cathedral_(Manhattan)", 40.7587, -73.9787, "教堂免费；观景台需购票", "第五大道、教堂和洛克菲勒中心集中体验。", "https://saintpatrickscathedral.org/"],
-      ["MoMA", "中城区", "人文景观", "Museum_of_Modern_Art", 40.7614, -73.9776, "建议官网购票", "现代艺术核心馆藏密度高。", "https://www.moma.org/visit/"],
-      ["Times Square & Broadway", "中城区", "休闲娱乐", "Times_Square", 40.7580, -73.9855, "百老汇演出需购票", "时代广场适合夜间短暂停留，重点是剧场体验。", "https://strangerthingsbroadway.com/"],
-      ["American Museum of Natural History", "上城区", "人文景观", "American_Museum_of_Natural_History", 40.7813, -73.9740, "建议官网定时票", "恐龙大厅、蓝鲸和哺乳动物馆是精选重点。", "https://www.amnh.org/plan-your-visit"],
-      ["The Met", "上城区", "人文景观", "Metropolitan_Museum_of_Art", 40.7794, -73.9632, "建议官网购票", "半天以上更从容，适合做精选路线。", "https://www.metmuseum.org/visit/plan-your-visit"],
-      ["Central Park", "上城区", "自然景观", "Central_Park", 40.7829, -73.9654, "免费，现场前往", "Bow Bridge、Bethesda Terrace、The Mall 可组成慢游线。", "https://www.centralparknyc.org/"],
-      ["Lincoln Center", "上城区", "休闲娱乐", "Lincoln_Center", 40.7725, -73.9835, "演出需购票；广场免费", "适合把上城一天收在有仪式感的地点。", "https://www.lincolncenter.org/"]
-    ].map(([name, region, type, wiki, lat, lng, appointment, summary, official]) => ({ name, region, type, wiki, lat, lng, appointment, summary, official }));
+      ["华尔街轴线", "下城区", "人文景观", "assets/landmarks/wall-street-axis.png", 40.7069, -74.0113, "免费，现场前往", "Charging Bull、NYSE 外观、Federal Hall 和 Trinity Church 可串成金融区步行线。", "https://www.nps.gov/feha/index.htm"],
+      ["9/11 Memorial & The Oculus", "下城区", "人文景观", "assets/landmarks/9-11-memorial-and-the-oculus.jpeg", 40.7115, -74.0134, "纪念池免费；博物馆需购票", "纪念池适合安静停留，Oculus 建筑感强。", "https://www.911memorial.org/visit"],
+      ["SoHo · Washington Square Park · NYU", "下城区", "休闲娱乐", "assets/landmarks/soho-washington-square-park-nyu.jpeg", 40.7308, -73.9973, "免费，现场前往", "逛街、咖啡、校园和街区氛围自然衔接。", "https://www.nycgovparks.org/parks/washington-square-park"],
+      ["Statue of Liberty & Ellis Island", "下城区", "人文景观", "assets/landmarks/statue-of-liberty.jpeg", 40.6892, -74.0445, "必须购买官方渡轮票", "自由女神岛和埃利斯岛是纽约移民史核心组合。", "https://www.cityexperiences.com/new-york/city-cruises/statue/"],
+      ["Hudson River Park", "下城区", "自然景观", "assets/landmarks/hudsons-river-park.jpeg", 40.7325, -74.0104, "免费，现场前往", "适合傍晚沿河散步，看夕阳和新泽西方向天际线。", "https://hudsonriverpark.org/"],
+      ["Whitney Museum · Little Island · High Line", "中城区", "人文景观", "assets/landmarks/whitney-museum-little-island-high-line.jpeg", 40.7396, -74.0089, "Whitney 建议购票；其余免费", "中城西侧艺术、公园和高架步道路线。", "https://whitney.org/visit"],
+      ["Hudson Yards · Vessel · The Shed", "中城区", "休闲娱乐", "assets/landmarks/hudson-yards-vessel-the-shed.jpeg", 40.7536, -74.0020, "视官网政策", "High Line 北端收尾，适合接 The Edge 或 Mercado Little Spain。", "https://www.hudsonyardsnewyork.com/discover/vessel"],
+      ["Roosevelt Island Tram", "中城区", "休闲娱乐", "assets/landmarks/roosevelt-island-tram.png", 40.7614, -73.9640, "刷 OMNY/MetroCard", "短时间获得东河缆车视角。", "https://rioc.ny.gov/302/Tram"],
+      ["Bryant Park · NYPL · Grand Central", "中城区", "人文景观", "assets/landmarks/bryant-park-nypl-grand-central.jpeg", 40.7527, -73.9772, "多数免费", "中城东经典三连，适合半天步行。", "https://www.nypl.org/locations/schwarzman"],
+      ["St. Patrick's Cathedral · Fifth Avenue · Rockefeller Center", "中城区", "人文景观", "assets/landmarks/st-patricks-cathedral-fifth-avenue-rockefeller-center.jpeg", 40.7587, -73.9787, "教堂免费；观景台需购票", "第五大道、教堂和洛克菲勒中心集中体验。", "https://saintpatrickscathedral.org/"],
+      ["MoMA", "中城区", "人文景观", "assets/landmarks/moma.jpeg", 40.7614, -73.9776, "建议官网购票", "现代艺术核心馆藏密度高。", "https://www.moma.org/visit/"],
+      ["Times Square & Broadway", "中城区", "休闲娱乐", "assets/landmarks/times-square-and-broadway.jpeg", 40.7580, -73.9855, "百老汇演出需购票", "时代广场适合夜间短暂停留，重点是剧场体验。", "https://strangerthingsbroadway.com/"],
+      ["American Museum of Natural History", "上城区", "人文景观", "assets/landmarks/american-museum-of-natural-history.jpeg", 40.7813, -73.9740, "建议官网定时票", "恐龙大厅、蓝鲸和哺乳动物馆是精选重点。", "https://www.amnh.org/plan-your-visit"],
+      ["The Met", "上城区", "人文景观", "assets/landmarks/the-met.jpeg", 40.7794, -73.9632, "建议官网购票", "半天以上更从容，适合做精选路线。", "https://www.metmuseum.org/visit/plan-your-visit"],
+      ["Central Park", "上城区", "自然景观", "assets/landmarks/central-park.jpeg", 40.7829, -73.9654, "免费，现场前往", "Bow Bridge、Bethesda Terrace、The Mall 可组成慢游线。", "https://www.centralparknyc.org/"],
+      ["Lincoln Center", "上城区", "休闲娱乐", "assets/landmarks/lincoln-center.jpeg", 40.7725, -73.9835, "演出需购票；广场免费", "适合把上城一天收在有仪式感的地点。", "https://www.lincolncenter.org/"]
+    ].map(([name, region, type, media, lat, lng, appointment, summary, official]) => ({
+      name,
+      region,
+      type,
+      wiki: media.startsWith("assets/") ? "" : media,
+      image: media.startsWith("assets/") ? media : "",
+      lat,
+      lng,
+      appointment,
+      summary,
+      official
+    }));
 
     const skylineDecks = [
       ["The Edge", "哈德逊广场", "30_Hudson_Yards", 40.7540, -74.0008, "普通票约 $40 起", "户外悬挑观景台、玻璃地板和西侧夕阳是最大亮点。", "需预约定时票；日落档建议提前预订。", "https://www.edgenyc.com/en/buy-tickets"],
@@ -1547,7 +1558,8 @@
       card.id = `sight-${index}`;
       card.dataset.region = sight.region;
       card.dataset.type = sight.type;
-      card.innerHTML = `<div class="sight-photo" data-wiki="${sight.wiki}"></div><div class="sight-body"><div class="sight-tags"><span class="sight-tag">${sight.region}</span><span class="sight-tag">${sight.type}</span></div><h3>${sight.name}</h3><div class="sight-meta">${sight.appointment}</div><p>${sight.summary}</p><div class="actions"><a class="primary" href="${sight.official}" target="_blank" rel="noreferrer">官网/预约</a></div></div>`;
+      const sightPhoto = sight.image ? `<div class="sight-photo" style="background-image:url('${sight.image}')"></div>` : `<div class="sight-photo" data-wiki="${sight.wiki}"></div>`;
+      card.innerHTML = `${sightPhoto}<div class="sight-body"><div class="sight-tags"><span class="sight-tag">${sight.region}</span><span class="sight-tag">${sight.type}</span></div><h3>${sight.name}</h3><div class="sight-meta">${sight.appointment}</div><p>${sight.summary}</p><div class="actions"><a class="primary" href="${sight.official}" target="_blank" rel="noreferrer">官网/预约</a></div></div>`;
       sightCards.appendChild(card);
       if (hasLeaflet) {
         const marker = L.marker([sight.lat, sight.lng], { icon: squareIcon("sight") }).addTo(map);
