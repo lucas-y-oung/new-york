@@ -1019,12 +1019,6 @@
         <h2 class="guide-title">纽约住宿攻略</h2>
         <p class="guide-lead">根据截图里的酒店笔记整理，并补充公开官网、地图入口和常见价格区间。纽约酒店税费、destination fee、清洁费和楼层/景观溢价差异很大，预订前务必用实际日期复核总价。</p>
 
-        <div class="section-head">
-          <div>
-            <h2 class="section-title">截图酒店清单</h2>
-            <p>卡片包含优缺点、订房小贴士、注意事项和地图/官网入口。</p>
-          </div>
-        </div>
         <div class="hotel-grid" id="hotelCards"></div>
 
         <div class="section-head">
@@ -1327,11 +1321,11 @@
     }));
 
     const skylineDecks = [
-      ["The Edge", "哈德逊广场", "30_Hudson_Yards", 40.7540, -74.0008, "普通票约 $40 起", "户外悬挑观景台、玻璃地板和西侧夕阳是最大亮点。", "需预约定时票；日落档建议提前预订。", "https://www.edgenyc.com/en/buy-tickets"],
-      ["Top of the Rock", "洛克菲勒中心", "30_Rockefeller_Plaza", 40.7593, -73.9795, "定时票约 $42 起", "视角均衡，北看中央公园，南看 Empire State Building。", "需预约定时票；傍晚到蓝调时段最热门。", "https://www.rockefellercenter.com/buy-tickets/top-of-the-rock/"],
-      ["SUMMIT One Vanderbilt", "中央车站", "assets/summit-one-vanderbilt.png", 40.7527, -73.9787, "约 $45 起，视日期浮动", "镜面空间、沉浸式装置和高空视野结合。", "需预约定时票；周末和日落时段更抢手。", "https://www.summitov.com/tickets/"],
-      ["Empire State Building", "中城", "Empire_State_Building", 40.7484, -73.9857, "86 层约 $44 起；102+86 层约 $79 起", "纽约最经典的登顶符号，夜景和历史感都强。", "需预约定时票；86 层即可完成经典体验。", "https://www.esbnyc.com/buy-tickets"],
-      ["One World Observatory", "下城", "assets/one-world-observatory.png", 40.7130, -74.0132, "标准票约 $44 起", "下城最高视角，可看纽约港和曼哈顿南端。", "需预约定时票；天气影响体验很大。", "https://www.oneworldobservatory.com/buy-tickets/"]
+      ["The Edge", "哈德逊广场", "assets/high-views/the-edge.jpeg", 40.7540, -74.0008, "普通票约 $40 起", "户外悬挑观景台、玻璃地板和西侧夕阳是最大亮点。", "需预约定时票；日落档建议提前预订。", "https://www.edgenyc.com/en/buy-tickets"],
+      ["Top of the Rock", "洛克菲勒中心", "assets/high-views/top-of-the-rock.jpeg", 40.7593, -73.9795, "定时票约 $42 起", "视角均衡，北看中央公园，南看 Empire State Building。", "需预约定时票；傍晚到蓝调时段最热门。", "https://www.rockefellercenter.com/buy-tickets/top-of-the-rock/"],
+      ["SUMMIT One Vanderbilt", "中央车站", "assets/high-views/summit-one-vanderbilt.jpeg", 40.7527, -73.9787, "约 $45 起，视日期浮动", "镜面空间、沉浸式装置和高空视野结合。", "需预约定时票；周末和日落时段更抢手。", "https://www.summitov.com/tickets/"],
+      ["Empire State Building", "中城", "assets/high-views/empire-state-building.jpeg", 40.7484, -73.9857, "86 层约 $44 起；102+86 层约 $79 起", "纽约最经典的登顶符号，夜景和历史感都强。", "需预约定时票；86 层即可完成经典体验。", "https://www.esbnyc.com/buy-tickets"],
+      ["One World Observatory", "下城", "assets/high-views/one-world-observatory.jpeg", 40.7130, -74.0132, "标准票约 $44 起", "下城最高视角，可看纽约港和曼哈顿南端。", "需预约定时票；天气影响体验很大。", "https://www.oneworldobservatory.com/buy-tickets/"]
     ].map(([name, area, media, lat, lng, price, summary, reserve, official]) => ({
       name,
       area,
