@@ -3,5 +3,6 @@ output/
 tmp/
 nyc_travel_guide_dist.zip
 DEPLOY_CHINA.md
+.wrangler/
 assets/hotels/*.jpg
 assets/maps/
