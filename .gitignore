@@ -1,4 +1,5 @@
 dist/
+dist-cn/
 output/
 tmp/
 nyc_travel_guide_dist.zip
