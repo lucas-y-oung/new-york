@@ -1,0 +1,7 @@
+dist/
+output/
+tmp/
+nyc_travel_guide_dist.zip
+DEPLOY_CHINA.md
+assets/hotels/
+assets/maps/
